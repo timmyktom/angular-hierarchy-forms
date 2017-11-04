@@ -1,0 +1,35 @@
+<form 
+  [formGroup]="formPersonalDetails">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+        <div class="panel-title">
+            Personal Details
+        </div>
+    </div>
+
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-12">
+          <input 
+            id="employeeEmail"
+            formControlName="employeeEmail"
+            type="email"
+            clas="text form-control"
+            placeholder="Enter email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h5>Gender:</h5>
+          <label class="label-radio"><input type="radio" formControlName="gender" value="male">Male</label>
+          <label class="label-radio"><input type="radio" formControlName="gender" value="female">Female</label>
+        </div>
+      </div>
+
+      <app-address
+        [form]="[formPersonalDetails, 'formAddress']">
+      </app-address>
+    </div>
+  </div>
+
+</form>

@@ -1,0 +1,49 @@
+<form 
+[formGroup]="formAddress">
+<div class="panel panel-warning">
+  <div class="panel-heading">
+      <div class="panel-title">
+          Address
+      </div>
+  </div>
+
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-6">
+        <input 
+          id="address1"
+          formControlName="address1"
+          type="text"
+          clas="text form-control"
+          placeholder="Enter Address 1">
+      </div>
+      <div class="col-md-6">
+        <input 
+          id="address2"
+          formControlName="address2"
+          type="text"
+          clas="text form-control"
+          placeholder="Enter Address 2">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <input 
+          id="city"
+          formControlName="city"
+          type="text"
+          clas="text form-control"
+          placeholder="Enter city">
+      </div>
+      <div class="col-md-6">
+        <input 
+          id="state"
+          formControlName="state"
+          type="text"
+          clas="text form-control"
+          placeholder="Enter state">
+      </div>
+    </div>
+  </div>
+</div>
+</form>
